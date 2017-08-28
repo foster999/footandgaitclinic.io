@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <style> 
+      * { 
+        <!--border: 1px solid rgba(0, 0, 0, 0.3);-->
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      
+      html {
+        overflow: -moz-scrollbars-vertical; 
+        overflow-y: scroll;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+      font-family: Raleway, serif;
+      }
+      
+      h1 {
+      font-size: 2rem;
+      line-height: 5rem;
+      }
+      
+      h2 {
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+      margin-top: 4rem;
+      }
+      
+      h3 {
+        font-weight: 600;
+        line-height: 3rem;
+      }
+
+      p {
+        line-height:1.5em;
+        font-family: Roboto, Arial, sans-serif;
+        text-align: justify;
+        font-size: 1rem;
+        margin-bottom: .75rem;
+        padding: .125rem
+      }
+      
+      a:not(.inline-link) {
+        color: currentColor;
+        text-decoration: none;
+      }
+      
+      .nav-container {
+      height: auto;
+      overflow: hidden;
+      width: 100%;
+      position: relative;
+      min-height: 4rem;
+      }
+      
+      .nav {
+        background-color: #ecf2f9;
+        width: 100%;
+        text-align: center;
+        position: fixed;
+        top: 0px;
+        z-index:99;
+        border-top: 2px solid #1a66ff;
+            -webkit-box-shadow: 0px 0px 20px 1px #000000;
+              -moz-box-shadow: 0px 0px 20px 1px #000000;
+                box-shadow: 0px 0px 20px 1px #000000;
+      }
+
+      .nav li {
+        display: inline-block;
+        font-family: 'Roboto', sans-serif;
+        color: SteelBlue;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        margin: 20px;
+      }
+      
+      .nav li:hover:not(.active) {
+        opacity: 0.7;
+      }
+      
+      .active {
+        border-bottom: 1px solid currentColor;
+        pointer-events: none;
+        cursor: default;
+      }
+      
+      .empty {
+        height: 4rem;
+        z-index: -100;
+        display: block;
+        position: relative;
+        left: 0;
+        top: 0;
+      }      
+      
+      .mid {
+        width:100%;
+        overflow: hidden;
+      }
+      
+      .main-container {
+        display: inline-block;
+        margin: 5% 20%;
+      }
+      
+      .full {
+        float: left;
+        width: 100%;
+        padding: 0 1em;
+      }
+      
+      /* Accordeon styles */
+      .tab {
+        position: relative;
+        margin-bottom: 1px;
+        width: 100%;
+        color: black;
+        overflow: hidden;
+      }
+      
+      input {
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+      }
+      
+      label {
+        position: relative;
+        display: block;
+        padding: 0 0 0 1em;
+        background: #ecf2f9;
+        border-top: 0.2rem solid #6398ed;
+        font-weight: bold;
+        line-height: 3;
+        cursor: pointer;
+        font-size: 1.25rem;
+      }
+      
+      .tab-content {
+        max-height: 0;
+        overflow: hidden;
+        background: #fff;
+        -webkit-transition: max-height 1.8s;
+        -o-transition: max-height 1.8s;
+        transition: max-height 1.8s;
+      }
+
+      .tab-content p {
+        margin: 1rem;
+      }
+      
+      .tab-content h3 {
+        margin: 1rem;
+        padding-top: 1rem;
+      }
+      
+      /* :checked */
+      input:checked ~ .tab-content {
+        max-height: 65em;
+      }
+      
+      /* Icon */
+      label::after {
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: block;
+        width: 3em;
+        height: 3em;
+        line-height: 3;
+        text-align: center;
+        -webkit-transition: all .35s;
+        -o-transition: all .35s;
+        transition: all .35s;
+      }
+      
+      input[type=checkbox] + label::after {
+        content: "+";
+      }
+      
+      input[type=radio] + label::after {
+        content: "\25BC";
+      }
+      
+      input[type=checkbox]:checked + label::after {
+        transform: rotate(315deg);
+      }
+      
+      input[type=radio]:checked + label::after {
+        transform: rotateX(180deg);
+      }
+
+
+      
+      .footer {
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 0.5rem 0.5rem 0rem 0.5rem;
+        background-color: #efefef;
+        text-align: center;
+        margin-top: 2.5rem;
+      }-->
+      
+      .copyright {
+        max-width: 20rem;
+        overflow: hidden;
+        margin: 1.5rem auto;
+        display: inline-block;
+      }
+      
+      .copyright p {
+       font-size: 0.8rem;
+      }
+      
+      .opening {
+        max-width: 20rem;
+        overflow: auto;
+        margin: 0rem auto;
+        display: inline-block;
+        float: right;
+      }
+      
+      .opening p {
+      font-size: 1rem;
+      line-height: 0.9rem;
+      padding: 0;
+      text-align: right;
+      }
+      
+      .hidden {
+      visibility: hidden;
+      }
+      
+      @media only screen and (max-width: 1343px) {
+      .empty {
+        height: 8rem;
+      }
+      }
+      
+      @media only screen and (max-width: 809px) {
+      .empty {
+        height: 12rem;
+      }
+      .main-container {
+        margin: 5% 5%;
+      }
+      }
+      
+      @media only screen and (max-width: 546px) {
+      .empty {
+        height: 16rem;
+      }
+      .navigation li {
+        font-size: 12px
+      }
+      }
+       </style>
+
+	<!-- Viewport between devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="Gait, Chiropodist, Podiatrist, Dietician, Massage, Feet, Sport">
+	<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>The Foot &amp; Gait Clinic</title>
+
+	</head>
+<body>
+  <div class  ="nav-container">
+  <div class = "empty" ></div>
+  <nav class = "nav"> 
+    <ul>
+    <li><a href = "home.html" class = "nav-link">Home</a></li>
+    <li><a href = "all.html" class = "nav-link">All Practitioners</a></li>
+    <li class = "active" ><a href = "all.html" class = "nav-link">Podiatry and Chiropody</a></li>
+    <li><a href = "massage.html" class = "nav-link">Sport and Remedial Massage Therapy</a></li>
+    <li><a href = "dietetics.html" class = "nav-link">Dietetics</a></li>
+    <li><a href = "acupuncture.html" class = "nav-link hidden">Acupuncture</a></li>
+    <li><a href = "contact.html" class = "nav-link">Contact us</a></li>
+    </ul>
+  </nav>
+  </div>
+  <div class = "mid">
+    <div class = "main-container">
+    <h1>Chiropody and Podiatry</h2>
+    <p>Please choose an option below:</P>
+      <div class="full">
+        <div class="tab">
+          <input id="tab-one" type="checkbox" name="tabs">
+          <label for="tab-one">Chiropody</label>
+          <div class="tab-content">
+            <p>We run a chiropody clinic at our Bridge Street practice 6 days a week and can also offer home visits and visit various Nursing Homes in and around the Taunton area.</p>
+            <p>We have 4 practitioners all of whom have completed a 3 year, full-time course and are <strong><a href = "http://www.hpc-uk.org/">HCPC registered</a></strong>. We are licensed to use local anaesthetic as necessary.</p>
+            <p>We are able to treat and offer relief for all the common foot complaints including thickened nails, corns, callus, hard skin, dry skin, Athlete's Foot, diabetic ulcers, heel pain, plantar fasciitis and more. We are able to refer patients for further investigations should it be necessary.</p>
+            <p>Made-to-measure insoles and appliances can be made on-site.</p>
+            <p>Our aim is to give professional service and comfort.</p>
+            <h3> Chiropody Prices</h3>
+            <p>Standard chiropody treatment: <strong>&pound;32</strong></p>
+            <p>Home visits: in Taunton <strong>&pound;38</strong>, outside Taunton <strong>&pound;42</strong></p>
+            <p>For insoles, casted orthotics, strapping, anaesthetic injections, toenail removal and other treatments, please ring for current prices.</p>
+          </div>
+        </div>
+        <div class="tab">
+          <input id="tab-two" type="checkbox" name="tabs">
+          <label for="tab-two">Podiatry</label>
+          <div class="tab-content">
+            <p>At the Foot and Gait clinic we are interested in the function of the lower limb and the movement of the body. The feet are the foundation of the body and the body pivots over the foot during movement. Malalignments in the feet can be reflected higher up the body causing problems at the knees, the hips, the low back.</p>
+            <p>These discrepancies are repeated thousands of times a day - every step for decades.</p>
+            <p>The feet are able to form the dual function of being stable enough to take a load and mobile enough to move. They can adapt to all sorts of terrain, they shock absorb and they give propulsion. The foot is beautifully designed to cope with all this if all the joints are functioning properly. Any disruption that alters the way the feet meet or leave the ground sets up a chain of pain and dysfunction.</p>
+            <p>For <strong>30 years</strong> we have been studying and treating foot and gait problems and have pioneered a selection of effective techniques.</p>
+            <p>We like to have an initial 1 hour appointment. Please come with a selection of worn footwear and a pair of shorts. We assess the mobility of the joints and video the feet in action, either walking or running. The video is slowed down and viewed. From this we decide on a treatment plan. We may make a temporary pair of insoles for you to trial, which will change the angles of the foot during gait. These are tailor-made to your feet on-site for you to try. We can adjust these easily as necessary. Once we are happy with the prescription we can take a cast and make a more permanent pair.</p>
+            <p>If we decide insoles are not required we may prescribe exercises, stretching regimes, strapping and shoe advice.</p>
+            <h3>Podiatry Prices</h3>
+            <p>Bio-mechanical lower limb assessment: <strong>&pound;135</strong></p>
+            <h3>Orthotics and Presciption Sandals</h3>
+            <p>In the last 12 months a new service has become available. We are able to send your cast to a bespoke sandal maker who can make the an integral part of the sandal.</p>
+            <h3>Hotter Presciption Sandals</h3>
+            <p>Hotter offer a service on several styles of sandal. The sandal is purchased by you and sent with your personal prescription and cast for a removable custom made footbed which can be interchanged with several Hotter styles.</p>
+            <p>We can even make prescription flip-flops for you.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  <div class = "footer">
+    <div class = "copyright">
+      <p>Copyright &copy; 2017 The Foot and Gait Clinic Limited
+      <br>
+      Company Registered in England No. #
+    </p>
+  </div>
+    <div class = "opening">
+      <p><strong>Reception Opening Times</strong></p>
+      <p>Monday - Friday
+      <p>09:00 - 14:00</p>
+      <p>Tel: 01823 256440</p>
+    </div>  
+  </div> 
+</body></html>

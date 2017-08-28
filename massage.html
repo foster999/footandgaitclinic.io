@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <style> 
+      * { 
+        <!--border: 1px solid rgba(0, 0, 0, 0.3);-->
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+       
+      html {
+        overflow: -moz-scrollbars-vertical; 
+        overflow-y: scroll;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+      font-family: Raleway, serif;
+      }
+            
+      h1 {
+      font-size: 2rem;
+      line-height: 5rem;
+      }
+      
+      h2 {
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+      margin: 3rem 0rem;
+      }
+      
+      h3 {
+        font-weight: 600;
+        line-height: 3rem;
+      }
+
+      p {
+        line-height:1.5em;
+        font-family: Roboto, Arial, sans-serif;
+        text-align: justify;
+        font-size: 1rem;
+        margin-bottom: .75rem;
+        padding: .125rem
+      }
+      
+      a:not(.inline-link) {
+        color: currentColor;
+        text-decoration: none;
+      }
+      
+      .nav-container {
+        height: auto;
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+        min-height: 4rem;
+      }
+      
+      .nav {
+        background-color: #ecf2f9;
+        width: 100%;
+        text-align: center;
+        position: fixed;
+        top: 0px;
+        z-index:99;
+        border-top: 2px solid #1a66ff;
+            -webkit-box-shadow: 0px 0px 20px 1px #000000;
+              -moz-box-shadow: 0px 0px 20px 1px #000000;
+                box-shadow: 0px 0px 20px 1px #000000;
+      }
+
+      .nav li {
+        display: inline-block;
+        font-family: 'Roboto', sans-serif;
+        color: SteelBlue;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        margin: 20px;
+      }
+      
+      .nav li:hover:not(.active) {
+        opacity: 0.7;
+      }
+      
+      .active {
+        border-bottom: 1px solid currentColor;
+        pointer-events: none;
+        cursor: default;
+      }
+      
+      .empty {
+        height: 4rem;
+        z-index: -100;
+        display: block;
+        position: relative;
+        left: 0;
+        top: 0;
+      }      
+      
+      .mid {
+        width:100%;
+        overflow: auto;
+      }
+      
+      .main-container {
+        display: inline-block;
+        width: 100%;
+      }
+      
+      .main-text {
+        display: inline-block;
+        margin: 0% 5%;
+        width: 40%;
+      }
+      
+      .text-figure {
+        display: inline-block;
+        margin: 0% 5%;
+        width: 37%
+      }
+      
+      .text-figure img {
+        margin: 1% auto;
+        max-width:100%;
+        max-height:100%;
+      }
+            
+      .footer {
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 0.5rem 0.5rem 0rem 0.5rem;
+        background-color: #efefef;
+        text-align: center;
+        margin-top: 2.5rem;
+      }
+      
+      .copyright {
+        max-width: 20rem;
+        overflow: hidden;
+        margin: 1.5rem auto;
+        display: inline-block;
+      }
+      
+      .copyright p {
+       font-size: 0.8rem;
+      }
+      
+      .opening {
+        max-width: 20rem;
+        overflow: auto;
+        margin: 0rem auto;
+        display: inline-block;
+        float: right;
+      }
+      
+      .opening p {
+      font-size: 1rem;
+      line-height: 0.9rem;
+      padding: 0;
+      text-align: right;
+      }
+      
+      .hidden {
+      visibility: hidden;
+      }
+      
+      @media only screen and (max-width: 1343px) {
+      .empty {
+        height: 8rem;
+      }
+      .main-text {
+        margin: 5% 5%;
+        width: auto;
+      }
+      .text-figure {
+        display: block;
+        margin: 5% auto;
+        width: 80%;
+        max-width: 40rem;
+      }
+      }
+      
+      @media only screen and (max-width: 809px) {
+      .empty {
+        height: 12rem;
+      }
+      }
+      
+      @media only screen and (max-width: 546px) {
+      .empty {
+        height: 16rem;
+      }
+      .navigation li {
+        font-size: 12px
+      }
+      }
+       </style>
+
+	<!-- Viewport between devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="Gait, Chiropodist, Podiatrist, Dietician, Massage, Feet, Sport">
+	<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>The Foot &amp; Gait Clinic</title>
+
+	</head>
+<body>
+  <div class  ="nav-container">
+  <div class = "empty" ></div>
+  <nav class = "nav"> 
+    <ul>
+    <li><a href = "home.html" class = "nav-link">Home</a></li>
+    <li><a href = "all.html" class = "nav-link">All Practitioners</a></li>
+    <li><a href = "podiatry.html" class = "nav-link">Podiatry and Chiropody</a></li>
+    <li class = "active"><a href = "massage.html" class = "nav-link">Sport and Remedial Massage Therapy</a></li>
+    <li><a href = "dietetics.html" class = "nav-link">Dietetics</a></li>
+    <li><a href = "acupuncture.html" class = "nav-link hidden">Acupuncture</a></li>
+    <li><a href = "contact.html" class = "nav-link">Contact us</a></li>
+    </ul>
+  </nav>
+  </div>
+  <div class = "mid">
+  <div class = "main-container">
+    <div class = "main-text">
+      <h2>Sport and Remedial Massage Therapy</h2>
+      <p>Our resident Sport and Remedial Massage Therapists are David Hooper and Juliet Rowe.</p>
+      <p>Both David and Juliet have undertaken a Level 5 BTEC  qualification  with the London School of Sport and Soft Tissue Therapy and are registered with the <strong><a href = "https://www.theisrm.com/" target = "_blank">Institute of Sport and Remiedial Massage (ISRM)</a></strong> and the <strong><a href = "https://www.cnhc.org.uk/" target = "_blank">Complimentary and Natural Healthcare Council (CNHC)</a></strong></p>
+      <p>The role of the sport &amp; remedial massage therapist includes the assessment of the soft tissues of the body to help prevent and manage dysfunction, injury, pain or physical disorders. This is achieved by the physical, manual manipulation of the soft tissues with supportive advice on exercise and training. Our Sport &amp; Remedial Massage Therapists practice within those fields for which they have been trained to a level of competence acceptable to the Institute of Sport &amp; Remedial Massage. They operate as  members of  our health care team.</p>
+      <h3>Diagnosis and Treatment of Injury and Medical Conditions</h3>
+      <p>The diagnosis and treatment of injury and medical conditions is the responsibility of the medical practitioner and not the massage therapist. But in the private sector people can go to a massage therapist without seeking a medical opinion first. This is acceptable in the majority of cases because sport & remedial massage has wide ranging benefits for people who do not have specific injuries. But we cannot expect people to self-diagnose and decide if massage is the right and proper treatment for them, and they may seek treatment when it is not. The massage therapist therefore has to deal safely and appropriately with any clinical situation they may encounter and, most importantly, must refer clients to a medical practitioner whenever necessary, or when in doubt. </p>
+    </div>
+      <div class = "text-figure">
+        <img src = "images/massagetable.jpeg" alt = "Massage Table">
+      </div>
+        <div class = "main-text">
+          <h3>How Remedial Massage Can Help</h3>
+          <p>For many thousands of years massage has been used effectively to deal with minor soft tissue conditions (affecting muscles, ligaments and tendons), and its uses and benefits are no less today than they have ever been. The majority of general aches and pains that are caused by lifestyle stresses are minor soft tissue conditions. Although they may recover naturally over time this is often not the case and they can develop into more serious and complex issues. Remedial massage has shown over the years to be a fast and effective way of dealing with these minor soft tissue conditions by assisting the body's own natural repair processes.</p>
+          <h3>As a Complementary Therapy</h3>
+          <p>Even with more serious injuries there is nearly always some secondary soft tissue condition also involved. This is usually because the muscular system is protecting or compensating for the more serious problem. Remedial massage can have a vital complementary role to play, in support of the medical practitioner, dealing with these secondary problems which otherwise may prevent a good recovery.</p>
+          <h3>Sports Massage</h3>
+          <p>This is a speciality within remedial massage that uses the same range of clinical skills. Many "so called" sports injuries have much to do with an athlete's posture and/or other factors outside of their sport, and the distinction between the two is often unclear. The real difference with sports massage is the focus on recovery from training and the early identification and treatment of potential soft tissue problems. With a thorough assessment of the condition of the athlete's soft tissues through massage, the therapist can monitor how he or she is responding to training. This can allow the athlete to "fine-tune" their training to avoid injury and enhance performance.</p>
+        </div>
+          <div class = "text-figure">
+            <img src = "images/massage.jpg" alt = "Massage">
+          </div>
+        </div>
+      </div>
+    <div class = "footer">
+    <div class = "copyright">
+      <p>Copyright &copy; 2017 The Foot and Gait Clinic Limited
+      <br>
+      Company Registered in England No. #
+    </p>
+  </div>
+    <div class = "opening">
+      <p><strong>Reception Opening Times</strong></p>
+      <p>Monday - Friday
+      <p>09:00 - 14:00</p>
+      <p>Tel: 01823 256440</p>
+    </div>  
+  </div>
+</body></html>

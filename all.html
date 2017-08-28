@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <style> 
+      * { 
+        <!--border: 1px solid rgba(0, 0, 0, 0.3);-->
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+       
+      html {
+        overflow: -moz-scrollbars-vertical; 
+        overflow-y: scroll;
+      }
+      
+      h1, h2, h3, h4, h5, h6 {
+      font-family: Raleway, serif;
+      }
+      
+      h1 {
+      font-size: 2rem;
+      line-height: 5rem;
+      }
+      
+      h2 {
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+      margin-top: 4rem;
+      }
+      
+      h3 {
+        font-weight: 600;
+        line-height: 3rem;
+      }
+
+      p {
+        line-height:1.5em;
+        font-family: Roboto, Arial, sans-serif;
+        text-align: justify;
+        font-size: 1rem;
+        margin-bottom: .75rem;
+        padding: .125rem
+      }
+      
+      a:not(.inline-link) {
+        color: currentColor;
+        text-decoration: none;
+      }
+      
+      .nav-container {
+      height: auto;
+      overflow: hidden;
+      width: 100%;
+      position: relative;
+      min-height: 4rem;
+      }
+      
+      .nav {
+        background-color: #ecf2f9;
+        width: 100%;
+        text-align: center;
+        position: fixed;
+        top: 0px;
+        z-index:99;
+        border-top: 2px solid #1a66ff;
+            -webkit-box-shadow: 0px 0px 20px 1px #000000;
+              -moz-box-shadow: 0px 0px 20px 1px #000000;
+                box-shadow: 0px 0px 20px 1px #000000;
+      }
+
+      .nav li {
+        display: inline-block;
+        font-family: 'Roboto', sans-serif;
+        color: SteelBlue;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        margin: 20px;
+      }
+      
+      .nav li:hover:not(.active) {
+        opacity: 0.7;
+      }
+      
+      .active {
+        border-bottom: 1px solid currentColor;
+        pointer-events: none;
+        cursor: default;
+      }
+      
+      .empty {
+        height: 4rem;
+        z-index: -100;
+        display: block;
+        position: relative;
+        left: 0;
+        top: 0;
+      }      
+      
+      .mid {
+        width:100%;
+        overflow: hidden;
+      }
+      
+      .main-container {
+        display: inline-block;
+        margin: 5% 20%;
+      }
+      
+      .practitioner {
+        margin: 3rem 0rem;
+        border-bottom: 2px solid rgba(144, 154, 187, 0.7)
+      }
+      
+      .receptionist {
+        margin: 3rem 0rem;
+      }
+      
+      .profile img {
+        float: left;
+        height: 12rem;
+        margin: 0rem 1rem 1rem 0rem;
+       }
+       
+       .bio {
+       }
+      
+      .footer {
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 0.5rem 0.5rem 0rem 0.5rem;
+        background-color: #efefef;
+        text-align: center;
+        margin-top: 2.5rem;
+      }
+      
+      .copyright {
+        max-width: 20rem;
+        overflow: hidden;
+        margin: 1.5rem auto;
+        display: inline-block;
+      }
+      
+      .copyright p {
+       font-size: 0.8rem;
+      }
+      
+      .opening {
+        max-width: 20rem;
+        overflow: auto;
+        margin: 0rem auto;
+        display: inline-block;
+        float: right;
+      }
+      
+      .opening p {
+      font-size: 1rem;
+      line-height: 0.9rem;
+      padding: 0;
+      text-align: right;
+      }
+      
+      .hidden {
+      visibility: hidden;
+      }
+      
+      @media only screen and (max-width: 1343px) {
+        .empty {
+          height: 8rem;
+        }
+        h1 {
+        margin-top: 1rem;
+        }
+      }
+      
+      @media only screen and (max-width: 809px) {
+        .empty {
+          height: 12rem;
+        }
+        h1 {
+        margin-top: 2rem;
+        }
+        .main-container {
+          margin: 5% 5%; 
+        }
+      }
+      
+      @media only screen and (max-width: 546px) {
+        .empty {
+          height: 16rem;
+        }
+        .navigation li {
+          font-size: 12px
+        }
+      }
+       </style>
+
+	<!-- Viewport between devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="Gait, Chiropodist, Podiatrist, Dietician, Massage, Feet, Sport">
+	<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>The Foot &amp; Gait Clinic</title>
+
+	</head>
+<body>
+  <div class  ="nav-container">
+  <div class = "empty" ></div>
+  <nav class = "nav"> 
+    <ul>
+    <li><a href = "home.html" class = "nav-link">Home</a></li>
+    <li class = "active"><a href = "all.html" class = "nav-link">All Practitioners</a></li>
+    <li><a href = "podiatry.html" class = "nav-link">Podiatry and Chiropody</a></li>
+    <li><a href = "massage.html" class = "nav-link">Sport and Remedial Massage Therapy</a></li>
+    <li><a href = "dietetics.html" class = "nav-link">Dietetics</a></li>
+    <li><a href = "acupuncture.html" class = "nav-link hidden">Acupuncture</a></li>
+    <li><a href = "contact.html" class = "nav-link">Contact us</a></li>
+    </ul>
+  </nav>
+  </div>
+  <div class = "mid">
+    <div class = "main-container">
+      <div class = "main-text">
+        <h1>Practitioners</h1>
+        <h2> Podiatrists</h2>
+        <div class = "practitioner">
+          <div class = "profile">
+            <img src = "images/marian.jpg" alt = "Marian Barnacle"/>
+          </div>
+          <div class = "bio">
+            <h3>Marian Barnacle</h3>
+            <p>Marian qualified in 1987 from the Chelsea School of Chiropody (part of the University of Westminster).</p>
+            <p>Previously, Marian worked at her clinic in Knightsbridge (London) and Park Street (Bristol). She has additionally worked in the NHS and set up the Paediatric gait clinic in Musgrove Park Hospital (Taunton).</p>
+            <p>Marian started the Foot and Gait clinic in Taunton in 1989 and in 2017 constructed the purpose built gait analysis clinic, alongside a functional foot orthoses lab.</p>
+          </div>
+        </div>
+        <div class = "practitioner">
+          <div class = "profile">
+            <img src = "images/evelyn.jpg" alt = "Evelyn Whyborn"/>
+          </div>
+          <div class = "bio">
+            <h3>Evelyn Whyborn</h3>
+            <p>Eve qualified in 1995 from the University of Brighton with a BSc Hons in Podiatry.</p>
+            <p>She has worked, privately,  in the Foot and Gait Clinic since qualifying, both in Taunton and in Bristol.  As well as treating general foot conditions, Eve uses her background in dance to specialise in dance related injuries.</p>
+            <p>Eve works with Marian in the gait analysis clinic and orthotic lab.</p>
+            <p></p>
+          </div>
+        </div>
+
+        <div class = "practitioner">
+            <div class = "profile">
+              <img src = "images/chris.jpg" alt = "Chris Nelson"/>
+            </div>
+            <div class = "bio">
+              <h3>Chris Nelson</h3>
+              <p>Chris previously worked in Birmingham as a registered nurse in the NHS, before spending two years working in Riyadh, Saudi Arabia. He retrained and qualified in 1996 with a BSc Hons (Podiatry).</p>
+              <p>He has worked in the NHS and had an interest in diabetic foot care and completed a diabetic foot module course, whilst working in Derby. He has also worked in the field of bespoke functional orthoses offering technical support to podiatrists. Additionally, Chris has lectured in the UK and abroad.</p>
+              <p>For the last five years, he has been working at the Foot and Gait Clinic providing general foot treatments, nail surgery and has a special interest in the treatment of verrucas and warts. He carries out home and nursing home visits.</p>
+            </div>
+        </div>
+
+        <div class = "practitioner">
+            <div class = "profile">
+              <img src = "images/alicia.jpg" alt = "Alicia Parr"/>
+            </div>
+            <div class = "bio">
+              <h3>Alicia Parr</h3>
+              <p>Alicia qualified in 2015 at the University of Plymouth in Podiatry. She works within the Foot and Gait Clinic and carries out home and nursing home visits.</p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+            </div>
+        </div>
+        
+        <h2>Sport and Remedial Massage Therapists</h2>
+        
+        <div class = "practitioner">
+            <div class = "profile">
+              <img src = "images/david.jpg" alt = "David Hooper"/>
+            </div>
+            <div class = "bio">
+              <h3>David Hooper</h3>
+              <p>David trained with the London School of Sport and Remedial Soft Tissue Therapy. He is registered with the <strong><a href = "https://www.theisrm.com/" target = "_blank">Institute of Sport and Remedial Massage (ISRM)</a></strong> and the <strong><a href = "https://www.cnhc.org.uk/" target = "_blank">Complimentary and Natural Healthcare Council (CNHC)</a></strong>.</p>
+              <p>He comes to the clinic with over 15 years of experience of working with athletes as a coach and has worked with not only elite athletes, but has also taken many age group athletes to European and World championships.</p>
+              <p>He has competed to a high level as a Cyclist, Triathlete and Ultra Runner. David can align with your specific needs and will always treat bringing in a wide range of techniques to help.</p>
+            </div>
+        </div>
+        <div class = "practitioner">
+            <div class = "profile">
+              <img src = "images/juliet.jpg" alt = "Juliet Rowe"/>
+            </div>
+            <div class = "bio">
+              <h3>Juliet Rowe</h3>
+              <p>Juliet originally trained as an ITEC Massage Therapist, then developed her knowledge and expertise with the London School of Sport and Remedial Soft Tissue Therapy. She is registered with the <strong><a href = "https://www.theisrm.com/" target = "_blank">Institute of Sport and Remedial Massage (ISRM)</a></strong>, and also the <strong><a href = "https://www.cnhc.org.uk/" target = "_blank">Complimentary and Natural Healthcare Council (CNHC)</a></strong> - both regulatory bodies in setting standards for professionals.</p>
+              <p>She comes to the clinic with over 20 years experience of treating people from a wide range of backgrounds - from the young to the elderly, the athlete to the more sedentary, and also people with medical conditions.</p>
+              <p>Her personal passion lies in endurance sports, where she has competed at a high level in marathon running, triathlons, and more recently ultra running. Amongst other running races, she has competed in several London Marathons, and also competed in the prestigious World Ironman Championships held in Hawaii.</p>
+              <p>Juliet brings an empathetic approach to her treatment sessions, and matches the most suitable techniques to your specific needs.</p>
+            </div>
+        </div>
+        
+        <h2>Reception</h2>
+        
+        <div class = "receptionist">
+            <figure class = "profile">
+              <img src = "images/jane.jpg" alt = "Jane"/>
+              <figcaption>Jane </figcaption>
+            </figure>
+        </div>
+        <div class = "receptionist">
+            <figure class = "profile">
+              <img src = "images/carol.jpg" alt = "Carol"/>
+              <figcaption>Carol</figcaption>
+            </figure>
+          </div>
+          <p>Images courtesey of <strong><a href = "http://www.mattbowenphotography.co.uk/" target = "_blank">Matt Bowen Photography</a></strong> </p>
+        </div>
+      </div>
+    </div>
+  <div class = "footer">
+    <div class = "copyright">
+      <p>Copyright &copy; 2017 The Foot and Gait Clinic Limited
+      <br>
+      Company Registered in England No. #
+    </p>
+  </div>
+    <div class = "opening">
+      <p><strong>Reception Opening Times</strong></p>
+      <p>Monday - Friday
+      <p>09:00 - 14:00</p>
+      <p>Tel: 01823 256440</p>
+    </div>  
+  </div>
+</body></html>
