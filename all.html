@@ -27,7 +27,7 @@
       
       h1 {
       font-size: 2rem;
-      line-height: 5rem;
+      line-height: 4rem;
       }
       
       h2 {
@@ -117,17 +117,28 @@
       
       .practitioner {
         margin: 3rem 0rem;
-        border-bottom: 2px solid rgba(144, 154, 187, 0.7)
+        border-bottom: 2px solid rgba(144, 154, 187, 0.7);
       }
       
       .receptionist {
         margin: 3rem 0rem;
+        border-bottom: 2px solid rgba(144, 154, 187, 0.7);
       }
       
       .profile img {
         float: left;
         height: 12rem;
         margin: 0rem 1rem 1rem 0rem;
+       }
+       
+       .receptionist img{
+        float: none;
+        margin: 0rem 1rem 0rem 0rem;
+       }
+       
+       .receptionist h3{
+        line-height: 2rem;
+        margin-bottom: 2rem;
        }
        
        .bio {
@@ -171,6 +182,10 @@
       
       .hidden {
       visibility: hidden;
+      }
+      
+      .clear {
+        clear: both;
       }
       
       @media only screen and (max-width: 1343px) {
@@ -309,20 +324,21 @@
         </div>
         
         <h2>Reception</h2>
-        
+        <p></p>
+        <p>Our lovely receptionists, Jane and Carol, are always happy to take your calls and arrange appointments in the practice.</p>
         <div class = "receptionist">
-            <figure class = "profile">
+            <div class = "profile">
               <img src = "images/jane.jpg" alt = "Jane"/>
-              <figcaption>Jane </figcaption>
-            </figure>
-        </div>
-        <div class = "receptionist">
-            <figure class = "profile">
+              <h3>Jane </h3>
+            </div>
+            <div class = "profile">
               <img src = "images/carol.jpg" alt = "Carol"/>
-              <figcaption>Carol</figcaption>
-            </figure>
+              <h3>Carol</h3>
+            </div>
           </div>
-          <p>Images courtesey of <strong><a href = "http://www.mattbowenphotography.co.uk/" target = "_blank">Matt Bowen Photography</a></strong> </p>
+          <div class = "link clear">
+            <p>Images courtesey of <strong><a href = "http://www.mattbowenphotography.co.uk/" target = "_blank">Matt Bowen Photography</a></strong> </p>
+          </div>
         </div>
       </div>
     </div>
