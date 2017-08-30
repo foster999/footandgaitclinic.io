@@ -3,6 +3,7 @@
   <head>
 
     <link href="master-style.css" type="text/css" rel="stylesheet">
+    <link href="burger.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -163,6 +164,11 @@
         font-size: 12px
       }
       }
+      
+      @media only screen and (max-width: 600px){
+        
+      
+      }
        </style>
 
 	<!-- Viewport between devices -->
@@ -174,7 +180,8 @@
 <body>
   <div class  ="nav-container">
   <div class = "empty" ></div>
-  <nav class = "nav"> 
+  <input class="burger-check" id="burger-check" type="checkbox"><label for="burger-check" class="burger"></label>
+  <nav class = "nav navigation" id = "navigation1"> 
     <ul><!--Set current page as active class-->
     <li class = "active" ><a href = "index.html" class = "nav-link">Home</a></li>
     <li><a href = "all.html" class = "nav-link">All Practitioners</a></li>
