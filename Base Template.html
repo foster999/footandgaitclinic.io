@@ -2,8 +2,8 @@
 <html>
   <head>
 
-    <link href="master-style.css" type="text/css" rel="stylesheet">
-    <link href="burger.css" type="text/css" rel="stylesheet">
+
+    <link href="burger.css" type="text/css" rel="stylesheet" media = "only screen and (max-width: 600px)">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -58,19 +58,17 @@
       }
       
       .nav-container {
-        height: auto;
+
         overflow: hidden;
         width: 100%;
-        position: relative;
-        min-height: 4rem;
+
       }
       
       .nav {
         background-color: #ecf2f9;
         width: 100%;
         text-align: center;
-        position: fixed;
-        top: 0px;
+
         z-index:99;
         border-top: 2px solid #1a66ff;
             -webkit-box-shadow: 0px 0px 20px 1px #000000;
@@ -79,13 +77,10 @@
       }
 
       .nav li {
-        display: inline-block;
+
         font-family: 'Roboto', sans-serif;
         color: SteelBlue;
-        font-size: 16px;
-        font-weight: 600;
-        letter-spacing: 2px;
-        margin: 20px;
+
       }
       
       .nav li:hover:not(.active) {
@@ -97,15 +92,7 @@
         pointer-events: none;
         cursor: default;
       }
-      
-      .empty {
-        height: 4rem;
-        z-index: -100;
-        display: block;
-        position: relative;
-        left: 0;
-        top: 0;
-      }      
+
       
       .mid {
         width:100%;
@@ -141,6 +128,10 @@
       visibility: hidden;
       }
       
+      .inactive {
+        display: none;
+      }
+      
       @media only screen and (max-width: 1343px) {
       .empty {
         height: 8rem;
@@ -163,12 +154,11 @@
       .navigation li {
         font-size: 12px
       }
+      .nav-container {
+        position: static;
+      }
       }
       
-      @media only screen and (max-width: 600px){
-        
-      
-      }
        </style>
 
 	<!-- Viewport between devices -->
@@ -179,8 +169,7 @@
 	</head>
 <body>
   <div class  ="nav-container">
-  <div class = "empty" ></div>
-  <input class="burger-check" id="burger-check" type="checkbox"><label for="burger-check" class="burger"></label>
+  <input class="burger-check inactive" id="burger-check" type="checkbox"><label for="burger-check" class="burger"></label>
   <nav class = "nav navigation" id = "navigation1"> 
     <ul><!--Set current page as active class-->
     <li class = "active" ><a href = "index.html" class = "nav-link">Home</a></li>

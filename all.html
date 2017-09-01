@@ -2,222 +2,13 @@
 <html>
   <head>
 
-    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="master-style.css" type="text/css" rel="stylesheet">
+    <link href="all-style.css" type="text/css" rel="stylesheet">
+    <link href="burger.css" type="text/css" rel="stylesheet" media = "only screen and (max-width: 600px)">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
-    <style> 
-      * { 
-        <!--border: 1px solid rgba(0, 0, 0, 0.3);-->
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-       
-      html {
-        overflow: -moz-scrollbars-vertical; 
-        overflow-y: scroll;
-      }
-      
-      h1, h2, h3, h4, h5, h6 {
-      font-family: Raleway, serif;
-      }
-      
-      h1 {
-      font-size: 2rem;
-      line-height: 4rem;
-      }
-      
-      h2 {
-      font-size: 1.5rem;
-      line-height: 1.5rem;
-      margin-top: 4rem;
-      }
-      
-      h3 {
-        font-weight: 600;
-        line-height: 3rem;
-      }
-
-      p {
-        line-height:1.5em;
-        font-family: Roboto, Arial, sans-serif;
-        text-align: justify;
-        font-size: 1rem;
-        margin-bottom: .75rem;
-        padding: .125rem
-      }
-      
-      a:not(.inline-link) {
-        color: currentColor;
-        text-decoration: none;
-      }
-      
-      .nav-container {
-      height: auto;
-      overflow: hidden;
-      width: 100%;
-      position: relative;
-      min-height: 4rem;
-      }
-      
-      .nav {
-        background-color: #ecf2f9;
-        width: 100%;
-        text-align: center;
-        position: fixed;
-        top: 0px;
-        z-index:99;
-        border-top: 2px solid #1a66ff;
-            -webkit-box-shadow: 0px 0px 20px 1px #000000;
-              -moz-box-shadow: 0px 0px 20px 1px #000000;
-                box-shadow: 0px 0px 20px 1px #000000;
-      }
-
-      .nav li {
-        display: inline-block;
-        font-family: 'Roboto', sans-serif;
-        color: SteelBlue;
-        font-size: 16px;
-        font-weight: 600;
-        letter-spacing: 2px;
-        margin: 20px;
-      }
-      
-      .nav li:hover:not(.active) {
-        opacity: 0.7;
-      }
-      
-      .active {
-        border-bottom: 1px solid currentColor;
-        pointer-events: none;
-        cursor: default;
-      }
-      
-      .empty {
-        height: 4rem;
-        z-index: -100;
-        display: block;
-        position: relative;
-        left: 0;
-        top: 0;
-      }      
-      
-      .mid {
-        width:100%;
-        overflow: hidden;
-      }
-      
-      .main-container {
-        display: inline-block;
-        margin: 5% 20%;
-      }
-      
-      .practitioner {
-        margin: 3rem 0rem;
-        border-bottom: 2px solid rgba(144, 154, 187, 0.7);
-      }
-      
-      .receptionist {
-        margin: 3rem 0rem;
-        border-bottom: 2px solid rgba(144, 154, 187, 0.7);
-      }
-      
-      .profile img {
-        float: left;
-        height: 12rem;
-        margin: 0rem 1rem 1rem 0rem;
-       }
-       
-       .receptionist img{
-        float: none;
-        margin: 0rem 1rem 0rem 0rem;
-       }
-       
-       .receptionist h3{
-        line-height: 2rem;
-        margin-bottom: 2rem;
-       }
-       
-       .bio {
-       }
-      
-      .footer {
-        right: 0;
-        bottom: 0;
-        left: 0;
-        padding: 0.5rem 0.5rem 0rem 0.5rem;
-        background-color: #efefef;
-        text-align: center;
-        margin-top: 2.5rem;
-      }
-      
-      .copyright {
-        max-width: 20rem;
-        overflow: hidden;
-        margin: 1.5rem auto;
-        display: inline-block;
-      }
-      
-      .copyright p {
-       font-size: 0.8rem;
-      }
-      
-      .opening {
-        max-width: 20rem;
-        overflow: auto;
-        margin: 0rem auto;
-        display: inline-block;
-        float: right;
-      }
-      
-      .opening p {
-      font-size: 1rem;
-      line-height: 0.9rem;
-      padding: 0;
-      text-align: right;
-      }
-      
-      .hidden {
-      visibility: hidden;
-      }
-      
-      .clear {
-        clear: both;
-      }
-      
-      @media only screen and (max-width: 1343px) {
-        .empty {
-          height: 8rem;
-        }
-        h1 {
-        margin-top: 1rem;
-        }
-      }
-      
-      @media only screen and (max-width: 809px) {
-        .empty {
-          height: 12rem;
-        }
-        h1 {
-        margin-top: 2rem;
-        }
-        .main-container {
-          margin: 5% 5%; 
-        }
-      }
-      
-      @media only screen and (max-width: 546px) {
-        .empty {
-          height: 16rem;
-        }
-        .navigation li {
-          font-size: 12px
-        }
-      }
-       </style>
 
 	<!-- Viewport between devices -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -228,6 +19,7 @@
 <body>
   <div class  ="nav-container">
   <div class = "empty" ></div>
+  <input class="burger-check" id="burger-check" type="checkbox"><label for="burger-check" class="burger"></label>
   <nav class = "nav"> 
     <ul>
     <li><a href = "index.html" class = "nav-link">Home</a></li>
@@ -329,11 +121,11 @@
         <div class = "receptionist">
             <div class = "profile">
               <img src = "images/jane.jpg" alt = "Jane"/>
-              <h3>Jane </h3>
+              <h4>Jane </h4>
             </div>
             <div class = "profile">
               <img src = "images/carol.jpg" alt = "Carol"/>
-              <h3>Carol</h3>
+              <h4>Carol</h4>
             </div>
           </div>
           <div class = "link clear">

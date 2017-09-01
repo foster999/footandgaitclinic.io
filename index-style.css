@@ -1,0 +1,89 @@
+* { 
+	<!--border: 1px solid rgba(0, 0, 0, 0.3);-->
+  }   
+
+  .banner-container {
+	width: 100%;
+  }
+
+  #banner-logo {
+	width: 100%;
+	z-index: 97;
+	padding-top: 2%;
+  }
+  
+  .main-container {
+	width: 49%
+  }
+  
+  .main-text {
+	margin: 5% 10%;
+  } 
+  
+  .main-text li {
+	margin: .75rem;
+	list-style-position: inside;
+	text-indent: 1rem;
+	font-family: Roboto, Arial, sans-serif;
+  }  
+		
+  .banner-low-container {
+	width: 100%;
+	margin: 5% 0%;
+  }
+		
+  #Rear {
+	width: 80%;
+	display: block;
+	margin: auto;
+  }
+  
+  .affiliation-container {
+	width: 100%;
+	margin: 2.5rem auto;
+  }
+  
+  .affiliation {
+	display: inline-block;
+	text-align: center;
+	font-family: Roboto, Arial, sans-serif;
+	font-size: 1rem;
+	width: 29.9%;
+	overflow: hidden;
+  }
+  
+  .affiliation img {
+	display: block;
+	margin: 2.5% auto;
+	padding: 1.5%;
+	max-height: 7.5rem;
+  }
+  
+  .cnhc img {
+	padding-left: 9%;
+  }
+	@media only screen and (max-width: 1343px) {
+  .empty {
+	height: 8rem;
+  }
+  }
+  
+  @media only screen and (max-width: 809px) {
+  .empty {
+	height: 12rem;
+  }
+  .gmap-container, .main-container {
+	width: 100%;
+  }
+  .affiliation {
+	width: 100%;
+  }
+  
+  @media only screen and (max-width: 546px) {
+  .empty {
+	height: 16rem;
+  }
+  .navigation li {
+	font-size: 12px
+  }
+  }

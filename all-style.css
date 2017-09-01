@@ -1,0 +1,72 @@
+  * { 
+	<!--border: 1px solid rgba(0, 0, 0, 0.3);-->
+  }
+
+  h1 {
+  line-height: 4rem;
+  }
+  
+  .main-container {
+	display: inline-block;
+	margin: 5% 20%;
+  }
+  
+  .practitioner {
+	margin: 3rem 0rem;
+	border-bottom: 2px solid rgba(144, 154, 187, 0.7);
+  }
+  
+  .receptionist {
+	margin: 3rem 0rem;
+	border-bottom: 2px solid rgba(144, 154, 187, 0.7);
+  }
+  
+  .profile img {
+	float: left;
+	height: 12rem;
+	margin: 0rem 1rem 1rem 0rem;
+   }
+   
+   .receptionist img{
+	float: none;
+	margin: 0rem 1rem 0rem 0rem;
+   }
+   
+   .receptionist h3{
+	line-height: 2rem;
+	margin-bottom: 2rem;
+   }
+  
+  .clear {
+	clear: both;
+  }
+  
+  @media only screen and (max-width: 1343px) {
+	.empty {
+	  height: 8rem;
+	}
+	h1 {
+	margin-top: 1rem;
+	}
+  }
+  
+  @media only screen and (max-width: 809px) {
+	.empty {
+	  height: 12rem;
+	}
+	h1 {
+	margin-top: 2rem;
+	}
+	.main-container {
+	  margin: 5% 5%; 
+	}
+  }
+  
+  @media only screen and (max-width: 546px) {
+	.empty {
+	  height: 16rem;
+	}
+	.navigation li {
+	  font-size: 12px
+	}
+  }

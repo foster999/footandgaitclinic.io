@@ -40,8 +40,8 @@ p {
 	font-family: Roboto, Arial, sans-serif;
 	text-align: justify;
 	font-size: 1rem;
-	margin-bottom: .75rem;
-	padding: .125rem
+	margin-bottom: 0.75rem;
+	padding: 0.125rem
 }
 
 a:not(.inline-link) {
@@ -84,6 +84,10 @@ a:not(.inline-link) {
 	opacity: 0.7;
 }
 
+.burger-check {
+  display: none;
+}
+
 .active {
 	border-bottom: 1px solid currentColor;
 	pointer-events: none;
@@ -102,14 +106,6 @@ a:not(.inline-link) {
 .mid {
 	width:100%;
 	overflow: auto;
-}
-
-.main-container {
-	width: 49%
-}
-
-.main-text {
-	margin: 5% 10%;
 }
 	
 .footer {
