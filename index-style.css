@@ -1,5 +1,5 @@
 * { 
-	<!--border: 1px solid rgba(0, 0, 0, 0.3);-->
+	//*border: 1px solid rgba(0, 0, 0, 0.3);*//
   }   
 
   .banner-container {
@@ -9,15 +9,17 @@
   #banner-logo {
 	width: 100%;
 	z-index: 97;
-	padding-top: 2%;
+	padding-top: 1%;
   }
   
   .main-container {
-	width: 49%
+	display: table-cell;
+	width: 50%;
+	vertical-align: middle;
   }
   
   .main-text {
-	margin: 5% 10%;
+	margin: 1% 10%;
   } 
   
   .main-text li {
@@ -41,14 +43,16 @@
   .affiliation-container {
 	width: 100%;
 	margin: 2.5rem auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
   }
   
   .affiliation {
-	display: inline-block;
 	text-align: center;
 	font-family: Roboto, Arial, sans-serif;
 	font-size: 1rem;
-	width: 29.9%;
 	overflow: hidden;
   }
   
@@ -59,9 +63,6 @@
 	max-height: 7.5rem;
   }
   
-  .cnhc img {
-	padding-left: 9%;
-  }
 	@media only screen and (max-width: 1343px) {
   .empty {
 	height: 8rem;
