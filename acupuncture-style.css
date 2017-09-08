@@ -24,12 +24,18 @@
 	list-style-position: inside;
 	text-indent: 1rem;
 	font-family: Roboto, Arial, sans-serif;
-  }  
+  }
+  
+  .main-text ul {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
   
   .text-figure {
-	display: inline-block;
-	margin: auto 5%;
-	width: 37%
+	display: block;
+	margin: 1rem auto;
+	width: 50%;
   }
   
   .text-figure img {
@@ -38,7 +44,6 @@
 	max-width: 80%;
 	max-height: 100%;
 	justify-content: center;
-	padding-bottom: 100%;
   }
   
   @media only screen and (max-width: 1343px) {

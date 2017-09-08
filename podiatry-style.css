@@ -12,6 +12,27 @@
 	margin: 5% 20%;
   }
   
+  .tab-content li {
+	margin: 0.75rem;
+	list-style-position: inside;
+	text-indent: 1rem;
+	font-family: Roboto, Arial, sans-serif;
+  } 
+  
+  .chiropody {
+	display: block;
+	margin: auto;
+	width: 90%;
+	max-width: 700px;
+  }
+  
+  .pod {
+	display: block;
+	margin: 1rem auto;
+	width: 60%;
+	max-width: 500px;
+  }
+  
   .full {
 	float: left;
 	width: 100%;
@@ -65,7 +86,7 @@
   
   /* :checked */
   .full input:checked ~ .tab-content {
-	max-height: 100rem;
+	max-height: 150rem;
   }
   
   /* Icon */
@@ -102,6 +123,10 @@
   .empty {
 	height: 8rem;
   }
+  .main-container {
+	width: 80%;
+	margin: 5% 10%;
+  }
   }
   
   @media only screen and (max-width: 809px) {
@@ -109,8 +134,8 @@
 	height: 12rem;
   }
   .main-container {
-	width: 80%;
-	margin: 5% 10%;
+	width: 98%;
+	margin: 1%;
   }
   }
   
