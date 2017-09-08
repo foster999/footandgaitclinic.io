@@ -1,5 +1,5 @@
 * { 
-	//*border: 1px solid rgba(0, 0, 0, 0.3);*//
+	/*border: 1px solid rgba(0, 0, 0, 0.3);*/
   }   
 
   .banner-container {
@@ -13,9 +13,10 @@
   }
   
   .main-container {
-	display: table-cell;
+	display: flex;
+    justify-content: center; /* add to align horizontal */
+    align-items: center; /* add to align vertical */
 	width: 50%;
-	vertical-align: middle;
   }
   
   .main-text {
@@ -69,11 +70,11 @@
   }
   }
   
-  @media only screen and (max-width: 809px) {
+  @media only screen and (max-width: 1200px) {
   .empty {
 	height: 12rem;
   }
-  .gmap-container, .main-container {
+  .main-container {
 	width: 100%;
   }
   .affiliation {
