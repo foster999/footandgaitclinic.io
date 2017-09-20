@@ -49,6 +49,7 @@ a:not(.inline-link) {
 	text-decoration: none;
 }
 
+/* Navigation Bar*/
 .nav-container {
 	height: auto;
 	overflow: hidden;
