@@ -38,12 +38,21 @@
 	margin: 0 0 1rem 2.75rem;
    }
    
-   #swift {
+     .logo-container {
+	width: 100%;
+	margin: 2.5rem auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+  }
+  
+   #swift, #lunula {
 	display: block;
 	margin: auto;
 	padding-bottom: 1.5rem;
 	max-width: 200px;
-	width: 30%;
+	width: 80%;
    }
   
   .clear {
