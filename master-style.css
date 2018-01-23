@@ -150,3 +150,7 @@ a:not(.inline-link) {
 .hidden {
 	visibility: hidden;
 }
+
+.no-access {
+	display: none !important;
+}
