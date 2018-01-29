@@ -34,11 +34,24 @@
 	max-width: 350px;
   }
   
+  .logo {
+	display: block;
+	margin: 2rem auto;
+	width: 40%;
+	max-width: 250px;
+  }
+  
+  .small {
+	max-width: 175px;
+	image-orientation: unset;
+  }
+  
   .full {
 	float: left;
 	width: 100%;
 	padding: 0 1em;
   }
+  
   
   /* Accordeon styles */
   .tab {
