@@ -55,6 +55,13 @@
 	width: 80%;
    }
   
+  .main-text li {
+	margin: .75rem;
+	list-style-position: inside;
+	text-indent: 1rem;
+	font-family: Roboto, Arial, sans-serif;
+  }
+  
   .clear {
 	clear: both;
   }
