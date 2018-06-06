@@ -58,6 +58,13 @@
   }
   }
   
+  .main-text li {
+	margin: .75rem;
+	list-style-position: inside;
+	text-indent: 1rem;
+	font-family: Roboto, Arial, sans-serif;
+  }  
+  
   @media only screen and (max-width: 809px) {
   .empty {
 	height: 12rem;

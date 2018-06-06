@@ -133,7 +133,7 @@
 	transform: rotateX(180deg);
   }
   
-  @media only screen and (max-width: 1343px) {
+  @media only screen and (max-width: 1452px) {
   .empty {
 	height: 8rem;
   }
