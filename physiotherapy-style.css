@@ -1,81 +1,83 @@
-  * { 
-	/*border: 1px solid rgba(0, 0, 0, 0.3);*/
-  }
+* { 
+  /*border: 1px solid rgba(0, 0, 0, 0.3);*/
+}
 
-  h2 {
-	font-size: 1.5rem;
-	line-height: 1.5rem;
-	margin: 3rem 0rem 2rem 0rem;
-  }
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  margin: 3rem 0rem 2rem 0rem; 
+}
 
-  .main-container {
-	display: flex; /* add */
-    justify-content: center; /* add to align horizontal */
-    align-items: center; /* add to align vertical */
-	width: 100%;
-  }
-  
-  .main-text {
-	display: inline-block;
-	margin: 0% 5%;
-	width: 40%;
-  }
-  
-  .text-figure {
-	display: inline-block;
-	position: relative;
-	width: 37%;
-  }
-  
-  .text-figure img {
-    display: flex; /* add */
-    justify-content: center; /* add to align horizontal */
-    align-items: center; /* add to align vertical */
-	margin: auto;
-	max-width: 80%;
-	max-height: 100%;
-  }
-  
-  @media only screen and (max-width: 1452px) {
+.main-container {
+  display: flex; /* add */
+  justify-content: center; /* add to align horizontal */
+  align-items: center; /* add to align vertical */
+  width: 100%;
+}
+
+.main-text {
+  display: inline-block;
+  margin: 0% 5%;
+  width: 40%;
+}
+
+.text-figure {
+  display: inline-block;
+  position: relative;
+  width: 37%;
+}
+
+.text-figure img {
+  display: flex; /* add */
+  justify-content: center; /* add to align horizontal */
+  align-items: center; /* add to align vertical */
+  margin: auto;
+  max-width: 80%;
+  max-height: 100%;
+}
+
+@media only screen and (max-width: 1452px) {
   .empty {
-	height: 8rem;
-  }
+    height: 8rem;
+}
   .main-text {
-	margin: 5% 5%;
-	width: auto;
-  }
+    margin: 5% 5%;
+    width: auto;
+}
   .text-figure {
-	display: block;
-	margin: 1% auto;
-	width: 80%;
-	max-width: 30rem;
-  }
+    display: block;
+    margin: 1% auto;
+    width: 80%;
+    max-width: 30rem;
+}
   .main-container {
-	display: inline-block;
-  }
+    display: inline-block;
+}
   h2 {
-	margin: 1rem 0rem 2rem 0rem;
-  }
-  }
-  
+    margin: 1rem 0rem 2rem 0rem;
+}
+}
+
   .main-text li {
-	margin: .75rem;
-	list-style-position: inside;
-	text-indent: 1rem;
-	font-family: Roboto, Arial, sans-serif;
-  }  
-  
-  @media only screen and (max-width: 809px) {
+    margin: .75rem;
+    font-family: Roboto, Arial, sans-serif;
+}
+  .main-text ul {
+	list-style-position: outside;
+	padding-left: 40px;
+  }
+
+@media only screen and (max-width: 809px) {
   .empty {
-	height: 12rem;
-  }
-  }
-  
-  @media only screen and (max-width: 546px) {
+    height: 12rem;
+}
+}
+
+@media only screen and (max-width: 546px) {
   .empty {
-	height: 16rem;
-  }
+    height: 16rem;
+}
   .navigation li {
-	font-size: 12px
-  }
-  }
+    font-size: 12px
+}
+}
