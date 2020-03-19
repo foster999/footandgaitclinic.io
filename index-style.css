@@ -1,108 +1,107 @@
 * { 
-	/*border: 1px solid rgba(0, 0, 0, 0.3);*/
-  }   
+  /*border: 1px solid rgba(0, 0, 0, 0.3);*/
+}   
 
-  .banner-container {
-	width: 100%;
-  }
+.banner-container {
+  width: 100%;
+}
 
-  .covid-banner {
-	width: 90%;
-	margin: auto;
-	color: black;
-	padding: 1% 5%;
-	border: solid;
-	border-color: rgba(255, 0, 0, 0.5);
-	margin-bottom: 1.5rem;
-  }
-  
-  .covid-banner h2 {
-	margin-bottom: 1rem;
-  }
-  
-  
+.covid-banner {
+  width: 90%;
+  margin: auto;
+  color: black;
+  padding: 1% 5%;
+  border: solid;
+  border-color: rgba(255, 0, 0, 0.5);
+  margin-bottom: 1.5rem;
+}
 
-  #banner-logo {
-	width: 100%;
-	z-index: 97;
-	padding-top: 1%;
-  }
-  
-  .main-container {
-	display: flex;
-	display: -webkit-flex;
-    justify-content: center; /* add to align horizontal */
-    align-items: center; /* add to align vertical */
-	width: 50%;
-  }
-  
-  .main-text {
-	margin: auto 10%;
-  } 
-  
-  .main-text li {
-	margin: .75rem;
-	list-style-position: inside;
-	text-indent: 1rem;
-	font-family: Roboto, Arial, sans-serif;
-  }  
-		
-  .banner-low-container {
-	width: 100%;
-	margin: 5% 0%;
-  }
-		
-  #Rear {
-	width: 80%;
-	display: block;
-	margin: auto;
-  }
-  
-  .affiliation-container {
-	width: 100%;
-	margin: 2.5rem auto;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-  }
-  
-  .affiliation {
-	text-align: center;
-	font-family: Roboto, Arial, sans-serif;
-	font-size: 1rem;
-	overflow: hidden;
-  }
-  
-  .affiliation img {
-	display: block;
-	margin: 2.5% auto;
-	padding: 1.5%;
-	max-height: 7.5rem;
-  }
-  
-	@media only screen and (max-width: 1452px) {
+.covid-banner h2 {
+  margin-bottom: 1rem;
+}
+
+#banner-logo {
+  width: 100%;
+  z-index: 97;
+  padding-top: 1%;
+}
+
+.main-container {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center; /* add to align horizontal */
+  align-items: center; /* add to align vertical */
+  width: 50%;
+}
+
+.main-text {
+  margin: auto 10%;
+} 
+
+.main-text li {
+  margin: .75rem;
+  list-style-position: inside;
+  text-indent: 1rem;
+  font-family: Roboto, Arial, sans-serif;
+}  
+	
+.banner-low-container {
+  width: 100%;
+  margin: 5% 0%;
+}
+	
+#Rear {
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+
+.affiliation-container {
+  width: 100%;
+  margin: 2.5rem auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.affiliation {
+  text-align: center;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 1rem;
+  overflow: hidden;
+}
+
+.affiliation img {
+  display: block;
+  margin: 2.5% auto;
+  padding: 1.5%;
+  max-height: 7.5rem;
+}
+
+@media only screen and (max-width: 1452px) {
   .empty {
-	height: 8rem;
+    height: 8rem;
   }
-  }
-  
-  @media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 1200px) {
   .empty {
-	height: 12rem;
+    height: 12rem;
   }
   .main-container {
-	width: 100%;
+    width: 100%;
   }
   .affiliation {
-	width: 70%;
+    width: 70%;
   }
-  
-  @media only screen and (max-width: 546px) {
+}
+
+@media only screen and (max-width: 546px) {
   .empty {
-	height: 16rem;
-  }
+    height: 16rem;
+}
   .navigation li {
 	font-size: 12px;
   }
-  }
+ }
