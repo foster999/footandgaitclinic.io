@@ -8,7 +8,7 @@
 
 .covid-banner {
   width: 90%;
-  margin: auto;
+  margin: auto !important;
   color: black;
   padding: 1% 5%;
   border: solid;
